@@ -1,0 +1,27 @@
+<servers>
+ <server>
+  <servername>PS1SQ01</servername>
+  <tag>prod</tag>
+ </server>
+ <server>
+  <servername>PC1SQ02</servername>
+  <tag>prod</tag>
+  <tag>accounts</tag>
+  <tag>cluster</tag>
+ </server>
+ <server>
+  <servername>PS1SQ03</servername>
+  <tag>prod</tag>
+  <tag>distributor</tag>
+ </server>
+ <server>
+  <servername>QS1SQ01</servername>
+  <tag>QA</tag>
+  <tag>distributor</tag>
+ </server>
+ <server>
+  <servername>DS1SQ01</servername>
+  <tag>dev</tag>
+  <tag>distributor</tag>
+ </server>
+</servers>

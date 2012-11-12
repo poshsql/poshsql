@@ -1,0 +1,14 @@
+<queries>
+ <query>
+  <path>$psscriptroot\fixeddrives.sql</path>
+  <tag>fixeddrives</tag>
+ </query>
+ <query>
+  <path>$psscriptroot\authmode.sql</path>
+  <tag>authmode</tag>
+ </query>
+ <query>
+  <path>$psscriptroot\backupfiles.sql</path>
+  <tag>backupfiles</tag>
+ </query>
+</queries>

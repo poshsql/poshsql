@@ -1,0 +1,9 @@
+List databases with status on server
+List Logins on server
+Backup generation
+    --Files
+    --Destination Directry
+    --Litespeed script generation
+    --Native Backup generation
+fix orphan users
+
