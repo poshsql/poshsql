@@ -32,8 +32,11 @@
             if ($AsObject){
                 $adisks
             }else{
-                $adisks | select "Name","Total(GB)","Free(GB)","%Free" | ft -autosize
+                if ($mb){
+                   $adisks | select "Name","Total(MB)","Free(MB)","%Free" | ft -autosize
+                }else{
+                   $adisks | select "Name","Total(GB)","Free(GB)","%Free" | ft -autosize
             }
-            
+        } 
     }
 }
