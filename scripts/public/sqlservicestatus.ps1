@@ -1,4 +1,4 @@
-function Get-SqlServiceStatus(){
+function Get-PQSqlServiceStatus(){
 	param(
       [Parameter(Mandatory=$True,ValueFromPipeline=$True,ValueFromPipelineByPropertyName=$True)]
       [string[]]$instanceName
