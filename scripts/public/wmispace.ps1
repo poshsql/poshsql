@@ -1,12 +1,12 @@
 ﻿function Get-PQSpace() {
  param(
         [Parameter(Mandatory=$True,ValueFromPipeline=$True,ValueFromPipelineByPropertyName=$True)]
-        [string[]]$Computername,
+        [string[]]$ServerName,
         [switch]$mb,
         [switch]$AsObject
     )
 	process {
-            $disks = Get-WMIObject -Query "SELECT name,capacity,freespace,systemname from Win32_Volume where drivetype=3" -Computername $ComputerName 
+            $disks = Get-WMIObject -Query "SELECT name,capacity,freespace,systemname from Win32_Volume where drivetype=3" -Computername $ServerName 
             $adisks = @()
             foreach ($disk in $disks) { 
                 $info = @{
